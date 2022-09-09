@@ -68,10 +68,4 @@ router.post("/activities", async (req, res) => {
   }
 });
 
-router.get("*", (req, res) =>
-  res.sendFile(
-    path.resolve(__dirname, "reactFolderName", "build", "index.html")
-  )
-);
-
 module.exports = router;
